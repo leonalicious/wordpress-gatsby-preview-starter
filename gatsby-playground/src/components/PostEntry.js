@@ -10,7 +10,7 @@ const PostEntry = ({ post }) => {
       <header>
         <Link to={`${blogURI}/${uri}/`}>
           <h2 style={{ marginBottom: "5px" }}>{title}</h2>
-          <Image image={featuredImage} style={{ margin: 0 }}/>
+          <Image image={featuredImage} withFallback style={{ margin: 0 }}/>
         </Link>
       </header>
 
